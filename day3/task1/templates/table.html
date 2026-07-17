@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <!-- Jinja2 uses double curly braces to print dynamic variables -->
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>age</th>
+        </tr>
+        {% for student in student %}
+        <tr>
+            <td>{{student.name }}</td>
+            <td>{{student.age}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

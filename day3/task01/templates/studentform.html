@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Form</title>
+</head>
+<body>
+
+    <form action="/product" method="POST">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Product Name"
+            required
+        >
+
+        <input
+            type="number"
+            step="0.01"
+            name="price"
+            placeholder="Price"
+            required
+        >
+
+        <select name="category" required>
+            <option value="Laptop">Laptop</option>
+            <option value="Mobile">Mobile</option>
+            <option value="Tablet">Tablet</option>
+        </select>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
